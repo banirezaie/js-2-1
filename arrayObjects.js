@@ -14,5 +14,5 @@ let kitten3 = {
 }
 
 let kittens = [kitten1, kitten2, kitten3]
-
+console.log(kittens)
 console.log(kittens[1].name)

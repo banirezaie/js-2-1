@@ -1,17 +1,19 @@
-// let laptop = {
-//   brand: "Lenovo",
-//   screenSize: 13,
-//   isTouchscreen: true,
-//   colors: ["spaceGray", "black", "white"],
-// }
-
-// console.log(laptop)
+let laptop = {
+  brand: "Lenovo",
+  colors: ["spaceGray", "black", "white"],
+  screenSize: 13,
+  isTouchscreen: true,
+}
 
 // console.log(laptop.brand)
-
+// console.log(laptop.colors[1])
 // console.log(laptop["brand"])
+// console.log(laptop["colors"])
 
-// phone.brand = "Apple"
+laptop.brand = "Apple"
+console.log(laptop)
+laptop.memory = 16;
+console.log(laptop)
 
 // let animal = "Octopus"
 // function observe() {
@@ -30,12 +32,3 @@
 
 // scubaDive()
 
-let deadlyAnimal = "Blue-Ringed Octopus"
-
-function handleAnimal() {
-  let deadlyAnimal = "Scorpionfish"
-  console.log(deadlyAnimal)
-}
-
-handleAnimal()
-console.log(deadlyAnimal)
