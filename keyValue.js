@@ -1,35 +1,30 @@
-
-let capitalCities = {
-  scotland: "Edinburgh",
-  kenya: "Nairobi",
-  australia: "Canberra",
-  canada: "Ottawa",
+const capitalCities = {
+	scotland: "Edinburgh",
+	kenya: "Nairobi",
+	australia: "Canberra",
+	canada: "Ottawa",
 };
 
-let highScores = {
-  55: "Alistair",
-  100: "David",
-  89: "Hannah",
-  34: ["Sergi", "Frank"],
+const highScores = {
+	55: "Alistair",
+	100: "David",
+	89: "Hannah",
+	34: ["Sergio", "Frank"],
 };
 
-// ONLY EDIT BELOW HERE
-
-let capitalCitiesKeys = ;
-let highScoresKeys = ;
-let capitalCitiesValues = ;
-let highScoresValues = ;
-
-// ONLY EDIT ABOVE HERE
+const capitalCitiesKeys = Object.keys(capitalCities);
+const highScoresKeys = Object.keys(highScores);
+const capitalCitiesValues = Object.values(capitalCities);
+const highScoresValues = Object.values(highScores);
 
 console.log(capitalCitiesKeys);
-// prints [ 'scotland', 'kenya', 'australia', 'canada' ]
+// [ 'scotland', 'kenya', 'australia', 'canada' ]
 
 console.log(highScoresKeys);
-// prints ['34, '55', '89', '100']
+// ['34, '55', '89', '100']
 
 console.log(capitalCitiesValues);
-// prints [ 'Edinburgh', 'Nairobi', 'Canberra', 'Ottawa' ]
+// [ 'Edinburgh', 'Nairobi', 'Canberra', 'Ottawa' ]
 
 console.log(highScoresValues);
-// prints [[ 'Sergi', 'Frank' ], 'Alistair, 'David', 'Hannah']
+// [[ 'Sergio', 'Frank' ], 'Alistair, 'David', 'Hannah']
