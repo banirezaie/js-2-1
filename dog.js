@@ -1,16 +1,10 @@
 let dog = {
-  name: "Billy",
-  wantsToPlay: false,
-}
+	name: "Billy",
+	wantsToPlay: false,
+};
 
-// WRITE CODE BELOW THIS LINE
-dog.name = "Rex"
-dog.wantsToPlay = true
-// WRITE CODE ABOVE THIS LINE
+dog.name = "Rex";
+dog.wantsToPlay = true;
 
-console.log(dog.name)
-console.log(dog.wantsToPlay)
-
-// -> it should output:
-// Rex
-// true
+console.log(dog.name); //-> Rex
+console.log(dog.wantsToPlay); //-> true
