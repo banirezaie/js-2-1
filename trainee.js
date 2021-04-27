@@ -1,9 +1,14 @@
 const traineeGrades = {
-  tom: 20,
-  george: 17,
-  abdul: 19,
+	tom: 20,
+	george: 17,
+	abdul: 19,
+};
+
+for (const name in traineeGrades) {
+	if (name !== "george") {
+		console.log(`${name.toUpperCase()} - ${traineeGrades[name]}`);
+	}
 }
 
-// Prints
-// TOM - 20
-// ABDUL - 19
+// => TOM - 20
+// => ABDUL - 19
