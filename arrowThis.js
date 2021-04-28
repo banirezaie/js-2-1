@@ -1,33 +1,32 @@
 const person = {
-  firstName: "Donald",
-  lastName: "Trump",
-  fullName() {
-    //   //SCOPE      local
-    console.log(this)
-    return `${this.firstName} ${this.lastName}`
-  },
-  hisName: () => {
-    //SCOPE    global
-    console.log(this)
-    return `${person.firstName} ${person.lastName}`
-  },
-  shoutName() {
-    setTimeout(function () {
-      console.log(this.fullName())
-    }, 3000)
-  },
-  sayName() {
-    setTimeout(() => {
-      // console.log(this)
-      console.log(this.fullName())
-    }, 3000)
-  },
-}
+	firstName: "Donald",
+	lastName: "Trump",
+	fullName() {
+		//SCOPE --Local
 
-// console.log(person.hisName())
-console.log(person.shoutName())
+		// console.log(this); // this object
+		return `${this.firstName} ${this.lastName}`;
+	},
+	hisName: () => {
+		//SCOPE --Global
 
-//   //take a look at window.setTimeout
+		// console.log(this); // window object
+		return `${this.firstName} ${this.lastName}`;
+	},
+	shoutName() {
+		setTimeout(function () {
+			return this.fullName();
+		}, 3000);
+	},
+	sayName() {
+		setTimeout(() => {
+			// console.log(this); // this object
+			console.log(this.fullName());
+		}, 3000);
+	},
+};
 
-//this + =>         window
-//this + normal function        =>same object
+// console.log(person.fullName()); // Donald Trump
+// console.log(person.hisName()); // undefined undefined
+// console.log(person.shoutName()); // undefined Error!
+// person.sayName();
