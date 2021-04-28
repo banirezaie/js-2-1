@@ -10,14 +10,19 @@ let mentorsAges = {
   JAMIE: 25,
   Mozafar: 30,
 };
-
+// زهرا معینی 
 // ONLY EDIT BELOW THIS LINE
+// Object.keys mame object
+//Object.value مقدار object
+let mentorsNames = Object.keys(mentorsAges);
 
-let mentorsNames = ;
-
-let mentorsNamedUppercased = ;
+let mentorsNamedUppercased = mentorsNames.map((mentorName) =>mentorName.toUpperCase());
 
 // ONLY EDIT ABOVE THIS LINE
 
 console.log(mentorsNamedUppercased);
 // prints [ 'JAMES', 'JOSH', 'JAMIE', 'MOZAFAR' ]
+
+// dw
+// sxdsd
+// sdsd
