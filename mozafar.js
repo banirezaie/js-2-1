@@ -23,6 +23,6 @@ let mentorsNamedUppercased = mentorsNames.map((mentorName) =>mentorName.toUpperC
 console.log(mentorsNamedUppercased);
 // prints [ 'JAMES', 'JOSH', 'JAMIE', 'MOZAFAR' ]
 
-// 
-// 
-// 
+// dw
+// sxdsd
+// sdsd
