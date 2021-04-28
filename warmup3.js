@@ -56,12 +56,21 @@ let restaurantFinderApplication = {
   restaurants: restaurants,
   findAvailableRestaurants: function (numberOfPeople) {
     // Complete here
+    let findavailfilter= restaurants.filter(restoran => (restoran.totalSeats - restoran.numberOfCustomers) > numberOfPeople ) ;
+    let findavailmap = findavailfilter.map(restoran => restoran.name);
+    return findavailmap;
   },
-  findRestaurantServingDish: function (dishName) {
-    // Complete here
+  findRestaurantServingDish: function (dishName){
+     // Complete here
+    let findservfilter= restaurants.filter(restoran => restoran.menu.includes(dishName));
+    let findservmap= findservfilter.map(restoran => restoran.name);
+    return findservmap;
+
   },
   countNumberOfRestaurantsInArea: function (area) {
-    // Complete here
+   // Complete here
+   let center = restaurants.filter(restoran=> restoran.address.area === area).length;
+   return center;
   },
 }
 
