@@ -19,7 +19,7 @@ let restaurant1 = {
     area: "center",
   },
   menu: ["pizza", "calzone", "salad"],
-}
+};
 
 let restaurant2 = {
   name: "Ubiquitous Chip",
@@ -30,7 +30,7 @@ let restaurant2 = {
     area: "west",
   },
   menu: ["salad", "chocolate cake", "roast lamb"],
-}
+};
 
 let restaurant3 = {
   name: "Monkeyz",
@@ -41,9 +41,9 @@ let restaurant3 = {
     area: "center",
   },
   menu: ["stew", "chocolate cake", "panini"],
-}
+};
 
-let restaurants = [restaurant1, restaurant2, restaurant3]
+let restaurants = [restaurant1, restaurant2, restaurant3];
 
 /*
 DO NOT EDIT ANYTHING ABOVE THIS LINE
@@ -56,14 +56,26 @@ let restaurantFinderApplication = {
   restaurants: restaurants,
   findAvailableRestaurants: function (numberOfPeople) {
     // Complete here
+    return this.restaurants
+      .filter(
+        (numberOfSet) =>
+          numberOfSet.totalSeats - numberOfSet.numberOfCustomers >=
+          numberOfPeople
+      )
+      .map((names) => names.name);
   },
   findRestaurantServingDish: function (dishName) {
-    // Complete here
+    return this.restaurants
+      .filter((includeFood) => includeFood.menu.includes(dishName))
+      .map((namesOfrestaurants) => namesOfrestaurants.name);
   },
   countNumberOfRestaurantsInArea: function (area) {
     // Complete here
+    return this.restaurants.filter(
+      (areaNumber) => areaNumber.address.area === area
+    ).length;
   },
-}
+};
 
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
@@ -71,21 +83,21 @@ DO NOT EDIT ANYTHING BELOW THIS LINE
 
 let restaurantsAvailableFor5People = restaurantFinderApplication.findAvailableRestaurants(
   5
-)
+);
 console.log(
   `Find available restaurants for 5 people: Expected result: Ubiquitous Chip,Monkeyz, actual result: ${restaurantsAvailableFor5People}`
-)
+);
 
 let restaurantsServingSalad = restaurantFinderApplication.findRestaurantServingDish(
   "salad"
-)
+);
 console.log(
   `Find restaurants serving salad: Expected result: Paesano,Ubiquitous Chip, actual result: ${restaurantsServingSalad}`
-)
+);
 
 let numberOfRestaurantsInCityCentre = restaurantFinderApplication.countNumberOfRestaurantsInArea(
   "center"
-)
+);
 console.log(
   `Number of restaurants in city centre: Expected result: 2, actual result: ${numberOfRestaurantsInCityCentre}`
-)
+);
