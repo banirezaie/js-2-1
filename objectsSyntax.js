@@ -1,16 +1,17 @@
 
 let kitten = {
     fur colour: "orange",
-    age "23"
+    age: "23",
 };
 
-let laptop =
-    brand: "Lenovo"
-    ram "5GB"
-}
+let laptop = {
+    brand: "Lenovo",
+    ram "5GB",
+};
 
 let phone = {
-    operating system "iOS",
+    operatingSystem: "iOS",
     hasStylus: true,
-    megapixels 12
-    "batteryLife": "24 hours"
+    megapixels: 12,
+    batteryLife: "24 hours",
+};
