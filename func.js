@@ -28,7 +28,7 @@
 
 /* ================================ */
 
-//NEVER TRY IT AT HOME!!!
+// NEVER TRY IT AT HOME!!!
 // function collectEggs() {
 //   totalEggs = 6
 // }
@@ -37,3 +37,23 @@
 // console.log(totalEggs)
 
 /* ================================= */
+
+// const totalEggs = 0
+// function collectEggs() {
+//   const totalEggs = 6
+//   console.log(totalEggs)
+// }
+
+// collectEggs()
+
+/* ================================= */
+
+// let totalEggs = 0
+// function collectEggs() {
+//   let totalEggs = 6
+//   console.log(totalEggs)
+// }
+
+// collectEggs()
+// console.log(totalEggs)
+
