@@ -33,29 +33,19 @@ const destination4 = {
 
 const travelDestinations = [destination1, destination2, destination3, destination4];
 
-console.log("\nDestinations within 500 Kms are: ");
-const destinationNamesWithin500Kms = travelDestinations.forEach((destination) => {
-	if (destination.distanceKms < 500) {
-		console.log(destination.destinationName);
-	}
-});
+const destinationNamesWithin500Kms = travelDestinations
+	.filter((destination) => destination.distanceKms < 500)
+	.map((destination) => destination.destinationName);
 
-console.log("\nDestination reachable by ferry is: ");
-const destinationNameReachableByFerry = travelDestinations.forEach((destination) => {
-	if (destination.transportation.includes("ferry")) {
-		console.log(destination.destinationName);
-	}
-});
+const destinationNameReachableByFerry = travelDestinations
+	.filter((destination) => destination.transportation.includes("ferry"))
+	.map((destination) => destination.destinationName);
 
-console.log("\nDestinations more than 300 Kms away reachable by train are: ");
-const destinationNamesMoreThan300KmsAwayByTrain = travelDestinations.forEach((destination) => {
-	if (destination.distanceKms > 300 && destination.transportation.includes("train")) {
-		console.log(destination.destinationName);
-	}
-});
+const destinationNamesMoreThan300KmsAwayByTrain = travelDestinations
+	.filter((destination) => destination.distanceKms > 300 && destination.transportation.includes("train"))
+	.map((destination) => destination.destinationName);
 
 /* ---------------------------------- Tests --------------------------------- */
-//! I couldn't pass them :((
-// console.log(`Question 1) Expected result: Edinburgh,Dublin, actual result: ${destinationNamesWithin500Kms}`);
-// console.log(`Question 2) Expected result: Dublin, actual result: ${destinationNameReachableByFerry}`);
-// console.log(`Question 3) Expected result: London,Paris, actual result: ${destinationNamesMoreThan300KmsAwayByTrain}`);
+console.log(`Question 1) Expected result: Edinburgh,Dublin, actual result: ${destinationNamesWithin500Kms}`);
+console.log(`Question 2) Expected result: Dublin, actual result: ${destinationNameReachableByFerry}`);
+console.log(`Question 3) Expected result: London,Paris, actual result: ${destinationNamesMoreThan300KmsAwayByTrain}`);
