@@ -14,5 +14,14 @@ const restaurant = {
   city: "Tehran",
   state: "Persia",
   zipcode: "99999",
-}
+};
 //YOUR CODE GOES DOWN HERE:
+let fullAddress =
+  restaurant.address +
+  "   " +
+  restaurant.city +
+  "   " +
+  restaurant.state +
+  "   " +
+  restaurant.zipcode;
+console.log(fullAddress);

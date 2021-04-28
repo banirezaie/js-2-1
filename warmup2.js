@@ -6,8 +6,6 @@ An array of travel destinations is defined below.Each destination has a name, a 
 3- Print in the console all the destination names more than 300 kms far away and reachable by train.
 */
 
-
-
 let destination1 = {
   destinationName: "Edinburgh",
   distanceKms: 80,
@@ -44,11 +42,21 @@ DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
 */
 
-let destinationNamesWithin500Kms = // Complete here
+let destinationNamesWithin500Kms = travelDestinations
+  .filter((filterin500) => filterin500.distanceKms < 500)
+  .map((names) => names.destinationName);
+// Complete here
+let destinationNameReachableByFerry = travelDestinations
+  .filter((filterferry) => filterferry.transportations.includes("ferry"))
+  .map((namesFerry) => namesFerry.destinationName); // Complete here
 
-let destinationNameReachableByFerry = // Complete here
-
-let destinationNamesMoreThan300KmsAwayByTrain = // Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
+let destinationNamesMoreThan300KmsAwayByTrain = travelDestinations
+  .filter(
+    (namesThan300Train) =>
+      namesThan300Train.distanceKms > 300 &&
+      namesThan300Train.transportations.includes("train")
+  )
+  .map((nameThan300) => nameThan300.destinationName); // Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
 
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
