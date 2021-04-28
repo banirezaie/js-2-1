@@ -16,3 +16,6 @@ const restaurant = {
   zipcode: "99999",
 }
 //YOUR CODE GOES DOWN HERE:
+// const fullAddress = console.log(restaurant.address, restaurant.city, restaurant.state, restaurant.zipcode);
+const fullAddress = `${restaurant.address} ${restaurant.city} ${restaurant.state} ${restaurant.zipcode}`;   //it's better to code like this.
+console.log(fullAddress);

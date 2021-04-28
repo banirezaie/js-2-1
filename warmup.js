@@ -26,11 +26,11 @@ DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
 */
 
-let persons = // Complete here
+let persons = [person1,  person2, person3]// Complete here
 
-let personNames = // Complete here
+let personNames = persons.map(person => person.name) // Complete here
 
-let personsYoungerThan28YearsOld = // Complete here
+let personsYoungerThan28YearsOld = persons.filter(youngerThan28=> youngerThan28.age<28)// Complete here
 
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
