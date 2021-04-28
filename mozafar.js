@@ -13,9 +13,9 @@ let mentorsAges = {
 
 // ONLY EDIT BELOW THIS LINE
 
-let mentorsNames = ;
+let mentorsNames = ["james", "JOSH", "JAMIE", "Mozafar"];
 
-let mentorsNamedUppercased = ;
+let mentorsNamedUppercased = mentorsNames.map( name => name.toUpperCase())
 
 // ONLY EDIT ABOVE THIS LINE
 
