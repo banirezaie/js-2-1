@@ -9,11 +9,11 @@ const cat = {
   meow() {
     console.log(`${this.color} ${this.breed} cats are amazing`)
   },
-  thisIs: `this is ${this}`,
+  // thisIs: `this is ${this}`,
 }
 
 console.log(cat.meow())
 
 const meow2 = cat.meow
 
-console.log(cat.meow2)
+// console.log(cat.meow2)
