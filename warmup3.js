@@ -50,20 +50,27 @@ DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
 */
 
+const isRestaurantAvailable = (restaurant, numberOfPeople) => {
+  const availableSeats = restaurant.totalSeats - restaurant.numberOfCustomers;
+  return availableSeats >= numberOfPeople;
+};
+
+const includesDish = (restaurant, dishName) =>restaurant.menu.includes(dishName);
+
 let restaurantFinderApplication = {
   applicationName: "Restaurant Finder",
   applicationVersion: "1.0",
   restaurants: restaurants,
   findAvailableRestaurants: function (numberOfPeople) {
-    // Complete here
+    return restaurants .filter((restaurant) => isRestaurantAvailable(restaurant, numberOfPeople)).map((restaurant) => restaurant.name);
   },
   findRestaurantServingDish: function (dishName) {
-    // Complete here
+    return restaurants.filter((restaurant) => includesDish(restaurant, dishName)).map((restaurant) => restaurant.name);
   },
   countNumberOfRestaurantsInArea: function (area) {
-    // Complete here
+    return restaurants.filter((restaurant) => restaurant.address.area === area).length;
   },
-}
+};
 
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE

@@ -44,11 +44,9 @@ DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
 */
 
-let destinationNamesWithin500Kms = // Complete here
-
-let destinationNameReachableByFerry = // Complete here
-
-let destinationNamesMoreThan300KmsAwayByTrain = // Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
+let destinationNamesWithin500Kms = (destination) =>destination.distanceKms <=500; // Complete here
+let destinationNameReachableByFerry =(destination) =>destination.transportations.includes("ferry");// Complete here
+let destinationNamesMoreThan300KmsAwayByTrain =(destination)=>destination.transportations.includes("train");// Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
 
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
