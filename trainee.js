@@ -4,6 +4,8 @@ const traineeGrades = {
   abdul: 19,
 }
 
+console.log(traineeGrades.tom)
+console.log(traineeGrades.abdul)
 // Prints
 // TOM - 20
 // ABDUL - 19

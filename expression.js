@@ -5,7 +5,9 @@ const person = {
   born: "california",
 }
 
-// console.log(person.firstName)
-// console.log(person["firstName"])
-// console.log(person[firstName])
-// console.log(person["first" + "Name"])
+// they are diftert ways to console log objects
+
+console.log(person.firstName)
+console.log(person["firstName"])
+// console.log(person[firstName]) // but this code error about firstName and it's undifind and it should be in to the string
+console.log(person["first" + "Name"])

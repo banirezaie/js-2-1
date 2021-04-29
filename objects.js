@@ -11,7 +11,12 @@
 
 // console.log(laptop["brand"])
 
-// phone.brand = "Apple"
+// laptop.brand = "Apple"
+
+// updata value *****************
+// laptop.memory = 16;
+// ***************
+
 
 // let animal = "Octopus"
 // function observe() {

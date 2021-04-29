@@ -7,3 +7,4 @@ const myMath = {
     return num * num * num
   },
 }
+//we can use function in property...

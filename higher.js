@@ -9,3 +9,5 @@ function rollDie() {
 }
 
 callTwice(rollDie)
+
+//func is value of callTwice function...
