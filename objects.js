@@ -30,12 +30,12 @@
 
 // scubaDive()
 
-let deadlyAnimal = "Blue-Ringed Octopus"
+let deadlyAnimal = "Blue-Ringed Octopus";
 
 function handleAnimal() {
-  let deadlyAnimal = "Scorpionfish"
-  console.log(deadlyAnimal)
+  let deadlyAnimal = "Scorpionfish";
+  console.log(deadlyAnimal);
 }
 
-handleAnimal()
-console.log(deadlyAnimal)
+handleAnimal();
+console.log(deadlyAnimal);
