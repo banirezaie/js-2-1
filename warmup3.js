@@ -55,12 +55,21 @@ let restaurantFinderApplication = {
   applicationVersion: "1.0",
   restaurants: restaurants,
   findAvailableRestaurants: function (numberOfPeople) {
+    let availableones = restaurants.filter(seats =>
+    (seats.totalSeats - seats.numberOfCustomers) > numberOfPeople ) ;
+    let mapones = availableones.map(seats => seats.name);
+    return mapones;
     // Complete here
   },
   findRestaurantServingDish: function (dishName) {
+    let dish = restaurants.filter(dishes => dishes.menu.includes(dishName));
+    let dishmap = dish.map(dishes=> dishes.name);
+    return dishmap;
     // Complete here
   },
   countNumberOfRestaurantsInArea: function (area) {
+    let location  = restaurants.filter(zone => zone.address.area === area).length;
+    return location;
     // Complete here
   },
 }
