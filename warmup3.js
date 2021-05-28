@@ -54,17 +54,28 @@ let restaurantFinderApplication = {
   applicationName: "Restaurant Finder",
   applicationVersion: "1.0",
   restaurants: restaurants,
-  findAvailableRestaurants: function (numberOfPeople) {
-    // Complete here
+  findAvailableRestaurants(numberOfPeople) {
+    this.restaurants.forEach((restaurant) => {
+      if (
+        restaurant.totalSeats - restaurant.numberOfCustomers >=
+        numberOfPeople
+      ) {
+        console.log(restaurant.name);
+      }
+    });
   },
-  findRestaurantServingDish: function (dishName) {
-    // Complete here
+  findRestaurantServingDish(dishName) {
+    this.restaurants.forEach((restaurant) => {
+      if (restaurant.menu.includes(dishName)) console.log(restaurant.name);
+    });
   },
-  countNumberOfRestaurantsInArea: function (area) {
-    // Complete here
+  countNumberOfRestaurantsInArea(area) {
+    console.log(
+      this.restaurants.filter((restaurant) => restaurant.address.area === area)
+        .length
+    );
   },
-}
-
+};
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
 */
