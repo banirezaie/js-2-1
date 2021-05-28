@@ -7,3 +7,4 @@ let kitten = {
   isFemale: true,
   furColour: "brown",
 }
+console.log(kitten.ageMonths, kitten["isFemale"], kitten["furColour"]);

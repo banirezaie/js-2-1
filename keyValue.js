@@ -15,10 +15,10 @@ let highScores = {
 
 // ONLY EDIT BELOW HERE
 
-let capitalCitiesKeys = ;
-let highScoresKeys = ;
-let capitalCitiesValues = ;
-let highScoresValues = ;
+const capitalCitiesKeys = Object.keys(capitalCities);
+const highScoresKeys = Object.keys(highScores);
+const capitalCitiesValues = Object.values(capitalCities);
+const highScoresValues = Object.values(highScores);
 
 // ONLY EDIT ABOVE HERE
 
