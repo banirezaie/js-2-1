@@ -1,16 +1,19 @@
 const laptop = {
-  brand: "Lenovo",
+	brand: "Lenovo",
+	screenSize: 13,
+};
+
+laptop.isTouchscreen = true;
+laptop.colors = ["spaceGray", "black", "white"];
+laptop.brand = "Apple";
+laptop.owner = "me";
+
+console.log(laptop);
+
+/* {
+  brand: 'Apple',
   screenSize: 13,
-}
-
-laptop.isTouchscreen = true
-console.log(laptop)
-
-laptop.colors = ["spaceGray", "black", "white"]
-console.log(laptop)
-
-laptop.brand = "Apple"
-console.log(laptop)
-
-laptop.owner = "me"
-console.log(laptop)
+  isTouchscreen: true,
+  colors: [ 'spaceGray', 'black', 'white' ],
+  owner: 'me'
+} */
